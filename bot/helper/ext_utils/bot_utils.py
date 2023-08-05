@@ -146,8 +146,10 @@ def get_progress_bar_string(pct):
     if cPart >= 0:
         p_str += ['▤', '▥', '▦', '▧', '▨', '▩', '■'][cPart]
     p_str += '□' * (12 - cFull)
-    return f"[{p_str}]"
 
+    progress_link = f"<a href='https://t.me/starkzer' style='color: blue;'>{p_str}</a> {pct}"  # Replace 'https://example.com' with your desired link
+
+    return progress_link
 
 def get_all_versions():
     try:
