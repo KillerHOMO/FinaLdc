@@ -5,7 +5,7 @@ from random import choice as rchoice
 from bot import config_dict, LOGGER
 from bot.helper.themes import wzml_minimal
 
-AVL_THEMES = {"minimal": wzml_minimal, "emoji": wzml_emoji, "alpha": wzml_alpha} # You can add More ...
+AVL_THEMES = {"minimal": wzml_minimal,  "alpha": wzml_alpha} # You can add More ...
 # Add Last Dict Value, as shown, name: filename (same as given in Step 1)
 # Name can be of any Choice to Call the Theme Name
 for theme in listdir('bot/helper/themes'):
